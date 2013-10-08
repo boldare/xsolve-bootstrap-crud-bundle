@@ -32,6 +32,6 @@
                 }
             }
         }
-    ]
+    ],
     "target-dir" : "Xsolve/BootstrapCrudBundle"
 }

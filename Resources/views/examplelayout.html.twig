@@ -1,33 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Welcome!{% endblock %}</title>
 
     {% block stylesheets_acme %}
-        <link rel="stylesheet" href="{{ asset('bundles/acmedemo/css/demo.css') }}" />
+        <link rel="stylesheet" href="{{ asset('bundles/acmedemo/css/demo.css') }}"/>
     {% endblock %}
 
     {% block stylesheets %}
         {% stylesheets
         'css/bootstrap.css'
-        'bundles/xsolvebootstrapcrud/css/examplelayout.css' filter='cssrewrite'
-        %}
-        <link rel="stylesheet" href="{{ asset_url }}" />
+        'bundles/xsolvebootstrapcrud/css/examplelayout.css' filter='cssrewrite' %}
+        <link rel="stylesheet" href="{{ asset_url }}"/>
         {% endstylesheets %}
     {% endblock %}
 
     {% block javascriptstop %}
         {% javascripts
-            'js/jquery.js'
-            'js/bootstrap.js'
-        %}
-            <script type="text/javascript" src="{{ asset_url }}"></script>
+        'js/jquery.js'
+        'js/bootstrap.js' %}
+        <script type="text/javascript" src="{{ asset_url }}"></script>
         {% endjavascripts %}
     {% endblock %}
 
-    <link rel="icon" sizes="16x16" href="{{ asset('favicon.ico') }}" />
+    <link rel="icon" sizes="16x16" href="{{ asset('favicon.ico') }}"/>
 
 </head>
 
@@ -41,13 +39,12 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="brand" href="{% block bootstrap_title_link %}{% endblock %}">{% block bootstrap_title %}Bootstrap{% endblock %}</a>
+            <a class="brand"
+               href="{% block bootstrap_title_link %}{% endblock %}">{% block bootstrap_title %}Bootstrap{% endblock %}</a>
+
             <div class="nav-collapse collapse row-fluid">
                 {% block bootstrap_menu %}
-                <ul class="nav">
-                    <li class="active first">  <a href="">Home</a>                </li>
-                    <li class="">        <a href="">Get started</a>                </li>
-                </ul>
+                    {{ knp_menu_render('XsolveBootstrapCrudBundle:Builder:topMenu') }}
                 {% endblock %}
             </div>
         </div>
@@ -55,15 +52,16 @@
 </div>
 
 {% block bootstrap_subhead %}
-<!-- Subhead
-================================================== -->
-<header class="jumbotron subhead" id="overview">
-    <div class="container container-fuild">
-        <h1>Getting started</h1>
-        <p class="lead">Overview of the project and how to get started with a simple template.</p>
+    <!-- Subhead
+    ================================================== -->
+    <header class="jumbotron subhead" id="overview">
+        <div class="container container-fuild">
+            <h1>Getting started</h1>
 
-    </div>
-</header>
+            <p class="lead">Overview of the project and how to get started with a simple template.</p>
+
+        </div>
+    </header>
 {% endblock %}
 
 <div class="container container-fluid">
@@ -78,26 +76,25 @@
     ================================================== -->
     <div class="row row-fluid">
         {% block mainbody %}
-        <div class="span3 bs-docs-sidebar visible-desktop">
-            {% block bootstrap_leftmenu %}
-            <ul class="nav nav-list bs-docs-sidenav sidebar-nav visible-desktop">
-                <li><a class="" href="#home"><i class="icon-chevron-right"></i> Home</a></li>
-                <li><a class="" href="#getting-started"><i class="icon-chevron-right"></i> Getting strarted?</a></li>
-            </ul>
-            {% endblock %}
-        </div>
-        <div class="span9 sf-reset">
-            <section>
-            {% block body %}
-                <section id="contents">
-                    <div class="page-header">
-                        <h1>1. What's included</h1>
-                    </div>
-                    <p class="lead">Bootstrap comes equipped with HTML, CSS, and JS for all sorts of things, but they can be summarized with a handful of categories visible at the top of the <a href="http://getbootstrap.com">Bootstrap documentation</a>.</p>
+            <div class="span3 bs-docs-sidebar visible-desktop">
+                {% block bootstrap_leftmenu %}
+                    {{ knp_menu_render('XsolveBootstrapCrudBundle:Builder:mainMenu') }}
+                {% endblock %}
+            </div>
+            <div class="span9 sf-reset">
+                <section>
+                    {% block body %}
+                        <section id="contents">
+                            <div class="page-header">
+                                <h1>1. What's included</h1>
+                            </div>
+                            <p class="lead">Bootstrap comes equipped with HTML, CSS, and JS for all sorts of things, but
+                                they can be summarized with a handful of categories visible at the top of the <a
+                                        href="http://getbootstrap.com">Bootstrap documentation</a>.</p>
+                        </section>
+                    {% endblock %}
                 </section>
-            {% endblock %}
-            </section>
-        </div>
+            </div>
         {% endblock %}
     </div>
 
@@ -107,16 +104,16 @@
 <!-- Footer
 ================================================== -->
 {% block bootstrap_footer %}
-<footer class="footer">
-    <div class="container">
-        <p>&nbsp;</p>
-        <ul class="footer-links">
-            <li class=""><a href="#home">Home</a></li>
-            <li class="muted">&middot;</li>
-            <li class=""><a href="#getting-started">Getting started?</a></li>
-        </ul>
-    </div>
-</footer>
+    <footer class="footer">
+        <div class="container">
+            <p>&nbsp;</p>
+            <ul class="footer-links">
+                <li class=""><a href="#home">Home</a></li>
+                <li class="muted">&middot;</li>
+                <li class=""><a href="#getting-started">Getting started?</a></li>
+            </ul>
+        </div>
+    </footer>
 {% endblock %}
 
 {% block javascripts %}{% endblock %}

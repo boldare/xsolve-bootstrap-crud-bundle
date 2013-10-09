@@ -1,8 +1,14 @@
 {
     "name": "xsolve-pl/xsolve-bootstrap-crud-bundle",
+    "type": "library",
     "version": "1.0.0",
     "keywords":     ["bootstrap", "twitter", "CRUD"],
     "description": "XSolve Twitter Bootstrap bundle with CRUD generator and an example layout",
+    "autoload": {
+        "psr-0": {
+            "Xsolve\\BootstrapCrudBundle": ""
+        }
+    },
     "require": {
         "braincrafted/testing-bundle": "dev-master",
         "twbs/bootstrap": "2.3.*",

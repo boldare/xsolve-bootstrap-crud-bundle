@@ -1,0 +1,43 @@
+{
+    "name": "xsolve-pl/xsolve-bootstrap-crud-bundle",
+    "type": "library",
+    "version": "1.0.0",
+    "keywords":     ["bootstrap", "twitter", "CRUD"],
+    "description": "XSolve Twitter Bootstrap bundle with CRUD generator and an example layout",
+    "autoload": {
+        "psr-0": {
+            "Xsolve\\BootstrapCrudBundle": ""
+        }
+    },
+    "require": {
+        "braincrafted/bootstrap-bundle": "v1.4.2",
+        "twbs/bootstrap": "2.3.*",
+        "knplabs/knp-menu-bundle":"v1.1.2",
+        "knplabs/knp-menu": "v1.1.2",
+        "jquery/jquery": "1.9.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Piotr Pasich",
+            "email": "piotr.pasich@xsolve.pl"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "jquery/jquery",
+                "version": "1.9.1",
+                "dist": {
+                    "url": "http://code.jquery.com/jquery-1.9.1.js",
+                    "type": "file"
+                }
+            }
+        }
+    ],
+    "minimum-stability": "dev"
+}
+
+
+    

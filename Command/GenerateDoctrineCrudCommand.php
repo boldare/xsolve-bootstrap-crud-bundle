@@ -14,9 +14,6 @@ use Symfony\Component\HttpKernel\Bundle\BundleInterface;
  */
 class GenerateDoctrineCrudCommand extends GenerateDoctrineCrudCommandMain
 {
-    private $generator;
-    private $formGenerator;
-
     /**
      * @see Command
      */

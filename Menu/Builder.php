@@ -2,10 +2,8 @@
 
 namespace Xsolve\BootstrapCrudBundle\Menu;
 
-use FOS\UserBundle\FOSUserBundle;
 use Knp\Menu\FactoryInterface;
 use Symfony\Component\DependencyInjection\ContainerAware;
-use FOS\UserBundle\Model\User;
 
 class Builder extends ContainerAware
 {

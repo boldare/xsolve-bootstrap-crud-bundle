@@ -16,8 +16,10 @@
         "psr-0": { "Xsolve\\BootstrapCrudBundle": "" }
     },
     "require": {
-        "braincrafted/bootstrap-bundle": "dev-master",
+        "braincrafted/bootstrap-bundle": "v1.4.2",
         "twbs/bootstrap": "2.3.*",
+        "knplabs/knp-menu-bundle":"v1.1.2",
+        "knplabs/knp-menu": "v1.1.2",
         "jquery/jquery": "1.9.1"
     },
     "repositories": [

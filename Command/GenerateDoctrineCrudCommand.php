@@ -70,8 +70,9 @@ EOT
             $skeletonDirs[] = $dir;
         }
 
-        $skeletonDirs[] = __DIR__.'/../Resources/skeleton';
-        $skeletonDirs[] = __DIR__.'/../Resources';
+        $bundleDir = dirname($this->getContainer()->get('kernel')->locateResource('@XsolveBootstrapCrudBundle/Command/GenerateDoctrineCrudCommand.php'))
+        $skeletonDirs[] = $bundleDir . '/../Resources/skeleton';
+        $skeletonDirs[] = $bundleDir . '/../Resources';
 
         return $skeletonDirs;
     }

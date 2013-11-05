@@ -14,7 +14,7 @@
         "twbs/bootstrap": "2.3.*",
         "knplabs/knp-menu-bundle":"v1.1.2",
         "knplabs/knp-menu": "v1.1.2",
-        "jquery/jquery": "1.9.1"
+        "jquery/jquery": "*"
     },
     "license": "MIT",
     "authors": [
@@ -28,7 +28,7 @@
             "type": "package",
             "package": {
                 "name": "jquery/jquery",
-                "version": "1.9.1",
+                "version": "1.9-stable",
                 "dist": {
                     "url": "http://code.jquery.com/jquery-1.9.1.js",
                     "type": "file"

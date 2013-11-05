@@ -3,6 +3,10 @@ XsolveBootstrapCrudBundle
 
 By [Piotr Pasich](http://xsolve.pl)
 
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/6ed75282-7e0a-4fbd-a86a-13fe209e2509/big.png)](https://insight.sensiolabs.com/projects/6ed75282-7e0a-4fbd-a86a-13fe209e2509)
+
+[![knpbundles.com](http://knpbundles.com/xsolve-pl/xsolve-bootstrap-crud-bundle/badge)](http://knpbundles.com/xsolve-pl/xsolve-bootstrap-crud-bundle)
+
 
 About
 -----

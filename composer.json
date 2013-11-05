@@ -36,6 +36,7 @@
             }
         }
     ],
+    "target-dir" : "Xsolve/BootstrapCrudBundle",
     "minimum-stability": "dev"
 }
 

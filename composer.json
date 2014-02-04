@@ -13,7 +13,7 @@
         "braincrafted/bootstrap-bundle": "v1.4.2",
         "twbs/bootstrap": "2.3.*",
         "knplabs/knp-menu-bundle":"v1.1.2",
-        "knplabs/knp-menu": "v1.1,
+        "knplabs/knp-menu": "v1.1",
         "jquery/jquery": "*"
     },
     "license": "MIT",

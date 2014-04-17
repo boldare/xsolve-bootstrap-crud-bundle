@@ -3,6 +3,10 @@ XsolveBootstrapCrudBundle
 
 By [Piotr Pasich](http://xsolve.pl)
 
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/6ed75282-7e0a-4fbd-a86a-13fe209e2509/big.png)](https://insight.sensiolabs.com/projects/6ed75282-7e0a-4fbd-a86a-13fe209e2509)
+
+[![knpbundles.com](http://knpbundles.com/xsolve-pl/xsolve-bootstrap-crud-bundle/badge)](http://knpbundles.com/xsolve-pl/xsolve-bootstrap-crud-bundle)
+
 
 About
 -----
@@ -51,7 +55,7 @@ You also have to add `XsolveBootstrapCrudBundle` and `BcBootstrapBundle` to your
             $bundles = array(
                 ...
                 new Bc\Bundle\BootstrapBundle\BcBootstrapBundle(),
-                new Xsolve\BootstrapCrudBundle\(),
+                new Xsolve\BootstrapCrudBundle\XsolveBootstrapCrudBundle(),
             );
             ...
 
@@ -66,7 +70,7 @@ Example layout
 There is created example layout using twitter bootstrap styles in resources.
 After successful installation you can start with prepared example layout based on bootstrap's home page.
 
-To do this, you need to extend your base layotu file in app/Resources/views/base.html.twig by:
+To do this, you need to extend your base layout file in app/Resources/views/base.html.twig by:
 
 ```
     {% extends 'XsolveBootstrapCrudBundle::examplelayout.html.twig' %}

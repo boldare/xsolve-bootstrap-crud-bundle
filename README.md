@@ -19,12 +19,25 @@ Also, there is prepared example layout to make beggining with project faster.
 Installation
 ------------
 
-First you need to add `braincrafted/bootstrap-bundle` to `composer.json`:
+First you need to add `xsolve-pl/xsolve-bootstrap-crud-bundle` to `composer.json`:
 
     {
-       "require": {
-            "xsolve/xsolve-bootstrap-crud-bundle": "dev-master"
+        "require": {
+            "xsolve-pl/xsolve-bootstrap-crud-bundle": "dev-master"
+    },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "jquery/jquery",
+                "version": "1.9.1",
+                "dist": {
+                    "url": "http://code.jquery.com/jquery-1.9.1.js",
+                    "type": "file"
+                }
+            }
         }
+    ]
     }
 
 
